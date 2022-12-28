@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>任小乐的第四次作业</title>
+		<style type="text/css">
+			table{
+				border-collapse:collapse;/* 折叠成单一边框 */
+				height:600px;
+				width: 750px;
+				margin: 300px auto;
+				border:2px solid gold;
+			}
+			#thead{
+				background-color: darkslateblue;
+				color: gold;
+				font-size: 20px;
+			}
+			td,th{
+				border:5px solid darkslateblue;
+			}
+			.left{
+				text-align: right;
+				font-size: 26pt;
+				font-family: 微软雅黑;
+				background-color: royalblue;
+				color: gold;
+			}
+			.right{
+				background-color: mediumpurple;
+				font-family: 微软雅黑;
+				font-size: 30px;	
+				color: gold;
+			}
+			.text{
+				width: 200px;
+				height: 30px;
+				background-color: darkgray;
+			}
+			.button{
+				background-color: darkgray;
+				color: gold;
+				width: 100px;
+				height: 40px;
+				font-size: 20pt;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr id="thead">
+				<th colspan="2">
+					<h1>信 息 统 计 表</h1>
+				</th>
+			</tr>
+			<tr>
+				<td class="left">姓名：</td>
+				<td class="right">
+					<input type="text" name="userName" class="text">
+				</td>
+			</tr>
+			<tr>
+				<td class="left">年龄：</td>
+				<td class="right">
+					<input type="number" name="userName" class="text">
+				</td>
+			</tr>
+			<tr>
+				<td class="left">性别：</td>
+				<td class="right">
+					<input type="radio" name="sex">男
+					<input type="radio" checked="checked" name="sex">女
+				</td>
+			</tr>
+			<tr>
+				<td class="left">爱好：</td>
+				<td class="right">
+					<div><input type="checkbox" checked="checked" name="hobby" value="1">旅游</div>
+					<div><input type="checkbox" name="hobby" value="2">登山</div>
+					<div><input type="checkbox" name="hobby" value="3">健身</div>
+					<div><input type="checkbox" checked="checked" name="hobby" value="3">上网</div>
+					<div><input type="checkbox" name="hobby" value="5">游泳</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="left">学历：</td>
+				<td class="right">
+					<select name="degree" style="color: gold;font-size: 20pt;width: 210px;height: 40px;background-color: darkgray">
+						<option value="0">----请选择----</option>
+						<option value="1">专科</option>
+						<option value="2">本科</option>
+						<option value="3">硕士</option>
+						<option value="4">博士及以上</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="left">自我介绍:</td>
+				<td class="right">
+					<textarea name="comment" rows="8" cols="70" style="resize: none;color: gold;background-color: darkgray">自我简介：</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="left"></td>
+				<td class="right">
+					<input type="submit" value="提交" class="button">
+					<input type="reset"  value="重置" class="button">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
